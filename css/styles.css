@@ -82,7 +82,7 @@ nav {
     display: flex;
     align-items: center;
     height: 100vh;
-    background-image: url('https://raw.githubusercontent.com/codewithsarthak-2009/codewithsarthak-2009.github.io/refs/heads/main/images/Landing.jpg'); /* Replace with your image path */
+    background-image: url(''); /* Replace with your image path */
     background-size: cover; /* Cover the entire hero section */
     background-position: center; /* Center the background image */
     padding-left: 50px; /* Add padding on the left */
