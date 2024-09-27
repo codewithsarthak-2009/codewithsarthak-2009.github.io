@@ -1,0 +1,160 @@
+/* Load the EightBitDragon font */
+@font-face {
+    font-family: 'Eight Bit Dragon';
+    src: url('/fonts/EightBitDragon-anqx.ttf') format('truetype'); /* Ensure correct relative path */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Eight Bit Dragon', monospace;
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+/* Set the background to void black */
+html, body {
+    height: 100%; /* Ensure the background fills the entire page */
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Void black */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Eight Bit Dragon', monospace; /* Apply the custom font */
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #000000; /* Black void background */
+    padding: 1.5em; /* Adjust padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0px solid #333333;
+}
+
+/* Navigation links styles */
+nav {
+    padding: 1.0em; /* Adjust this value */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding: 0.6em 1.2em; /* Adjust this value */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #333333;
+    color: #ffffff; /* Green text on hover */
+}
+
+/* Logo styles */
+.logo {
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+/* Heros section */
+.hero {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url(''); /* Replace with your image path */
+    background-size: cover; /* Cover the entire hero section */
+    background-position: center; /* Center the background image */
+    padding-left: 50px; /* Add padding on the left */
+}
+
+.box {
+    background-color: #000000; /* Pure black background */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px; /* Set a max width for the box */
+    margin-right: 480px; /* Add margin to separate from the about box */
+    border: 5px solid white; /* White border */
+}
+
+.about-box {
+    background-color: #000000; /* Pure black background */
+    border: 5px solid white; /* White border */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px; /* Set a max width for the about box */
+    height: 82%; /* Set a height for the about box */
+    margin-left: 20px; /* Add margin to separate from the box */
+}
+
+.about-image {
+    width: 82%; /* Make the image full width */
+    height: auto; /* Keep aspect ratio */
+    margin: 0 auto 20px;
+    border-radius: 10px; /* Round the corners of the image */
+    margin-bottom: 20px; /* Space between the image and text */
+    display: block; /* Ensures the image is treated as a block-level element */
+
+}
+
+.quote {
+    font-size: 2.0rem; /* Font size for the quote */
+    text-align: center; /* Center the quote */
+    margin-top: auto; /* Push the quote to the bottom */
+    color: #ffffff; /* Quote color */
+}
+
+.floating-name {
+    animation: float 3s ease-in-out infinite;
+    font-size: 4rem; /* Large font size for name */
+    line-height: 1; /* No extra line height */
+    text-align: center; /* Center the name */
+    margin: 20px 0; /* Spacing around the name */
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px); /* Float effect */
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border: none;
+    background-color: #ff6f61; /* Button color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem; /* Increased button font size */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #e95e50; /* Darker button color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
